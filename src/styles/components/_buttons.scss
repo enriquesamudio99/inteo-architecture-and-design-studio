@@ -1,0 +1,22 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: var(--clr-primary-600);
+    color: var(--clr-white);
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0.75rem 1.25rem;
+    font-size: var(--fs-body-xs);
+    line-height: 1rem;
+    font-weight: var(--fw-semi-bold);
+    text-transform: uppercase;
+
+    &--lg {
+        padding: 1rem 1.5rem;
+        font-size: var(--fs-body-sm);
+        line-height: 1.5rem;
+    }
+
+}

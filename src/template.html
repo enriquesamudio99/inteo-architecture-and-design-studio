@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__container container">
+                <a href="#" class="navbar__logo">
+                    <img class="navbar__logo-img" id="navbarLogoImg" alt="Inteo Logo">
+                </a>
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">Our Work</a>
+                    </li>
+                    <li class="nav__item nav__item--btn">
+                        <a href="#" class="btn">
+                            Contact Us
+                            <img id="arrowIconSm" class="btn__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__content-container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Make <span class="section__italic">your home</span> an ode to joy</h1>
+                    <p class="hero__copy">We turn your empty house to a lovely home, making the compact spaces  with space saving furnitures. Making the unique tastes of yours into reality! </p>
+                </div>
+                <a href="#" class="hero__cta-container">
+                    <img id="heroCta" alt="Hero CTA" class="hero__cta">
+                </a>
+            </div>
+            <div class="hero__img-container">
+                <img id="heroImg" alt="Hero Image" class="hero__img">
+            </div>
+        </section>
+
+        <section class="awards">
+            <div class="awards__container container d-grid">
+                <div class="awards__header">
+                    <span class="awards__span">Awards</span>
+                </div>
+                <ul class="awards__list d-grid">
+                    <li class="award">
+                        <img id="germanAward" alt="German Design Award Img" class="award__img">
+                        <p class="award__title">German Design Award <span class="award__year">2021</span></p>
+                    </li>
+                    <li class="award">
+                        <img id="aDesignAward" alt="Gold A’ Design Award Img" class="award__img">
+                        <p class="award__title">Gold A’ Design Award <span class="award__year">2021</span></p>
+                    </li>
+                    <li class="award">
+                        <img id="ifDesignAward" alt="Award Img" class="award__img">
+                        <p class="award__title">IF Design Award <span class="award__year">2020</span></p>
+                    </li>
+                    <li class="award">
+                        <img id="goodDesignAward" alt="Award Img" class="award__img">
+                        <p class="award__title">Good Design Award <span class="award__year">2019</span></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section about-us" id="about">
+            <div class="about-us__container container">
+                <div class="about-us__content">
+                    <span class="section__eyebrow">
+                        <div class="section__line"></div>
+                        About Us
+                    </span>
+                    <h2 class="section__title">We help to bring your<span class="section__italic"> dream home</span> to reality</h2>
+                    <p class="about-us__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+                    <p class="about-us__copy">Tempor dolor elementum tellus non ipsum faucibus. Justo, magna mauris posuere auctor justo. Habitant proin aliquet volutpat leo ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc. Faucibus sit odio bibendum lobortis diam.</p>
+                </div>
+                <div class="about-us__creative">
+                    <div class="about-us__award">
+                        <img class="about-us__badge" id="awardUsBadge" alt="About Us badge">
+                    </div>
+                    <img class="about-us__img" id="aboutUsImg" alt="About Us image">
+                </div>
+            </div> 
+        </section>
+
+        <section class="section metrics">
+            <div class="metrics__container container">
+                <div class="metrics__content">
+                    <ul class="metrics__list">
+                        <li class="metric">
+                            <p class="metric__number">100%</p>
+                            <p class="metric__text">Satisfation <span class="metric__span">Clients</span></p>
+                        </li>
+                        <li class="metric">
+                            <p class="metric__number">250</p>
+                            <p class="metric__text">Employees on <span class="metric__span">worldwide</span></p>
+                        </li>
+                        <li class="metric">
+                            <p class="metric__number">3469</p>
+                            <p class="metric__text">Projects completed <span class="metric__span">on 60 countries</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services" id="services">
+            <div class="services__container container">
+                <div class="services__content">
+                    <span class="section__eyebrow">
+                        <div class="section__line"></div>
+                        Our Services
+                    </span>
+                    <h2 class="section__title">We provide the <span class="section__italic">best solutions</span> for your dream home</h2>
+                    <ul class="services__list">
+                        <li class="service">
+                            <img id="interiorDesignImg" alt="Service Icon" class="service__icon">
+                            <h3 class="service__title">Architectural & Interior Design</h3>
+                            <p class="service__copy">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+                        </li>
+                        <li class="service">
+                            <img id="buildingImg" alt="Service Icon" class="service__icon">
+                            <h3 class="service__title">Building Renovation</h3>
+                            <p class="service__copy">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+                        </li>
+                        <li class="service">
+                            <img id="constructionImg" alt="Service Icon" class="service__icon">
+                            <h3 class="service__title">Construction Management</h3>
+                            <p class="service__copy">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section works" id="works">
+            <div class="works__container container">
+                <div class="works__content d-grid">
+                    <div class="works__col-1">
+                        <span class="section__eyebrow">
+                            <div class="section__line"></div>
+                            Recent Works
+                        </span>
+                        <h2 class="section__title">Some of <span class="section__italic">our crafts</span> made with love</h2>
+                        <div class="work work--one">
+                            <div class="work__img-container">
+                                <img id="workOne" alt="Work Image" class="work__img">
+                            </div>
+                            <div class="work__content">
+                                <h3 class="work__title">Villa Furnishing & Interior</h3>
+                                <p class="work__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__col-2">
+                        <div class="work work--two">
+                            <div class="work__img-container">
+                                <img id="workTwo" alt="Work Image" class="work__img">
+                            </div>
+                            <div class="work__content">
+                                <h3 class="work__title">Luxury Hotel Renovation</h3>
+                                <p class="work__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam.</p>
+                            </div>
+                        </div>
+                        <div class="work work--three">
+                            <div class="work__img-container">
+                                <img id="workThree" alt="Work Image" class="work__img">
+                            </div>
+                            <div class="work__content">
+                                <h3 class="work__title">Residence Swimming Pool</h3>
+                                <p class="work__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn--lg works__btn">
+                    Contact Us
+                    <img id="arrowIconLg" class="btn__icon">
+                </a>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__top">
+                    <div class="footer__top-left">
+                        <h2 class="footer__title">Kick-start your dream home with us</h2>
+                        <a href="#" class="footer__send-us">Send us a hi</a>
+                    </div>
+                    <div class="footer__top-right">
+                        <div class="footer__address">
+                            <p class="footer__address-title">Brooklyn, New York</p>
+                            <p class="footer__address-copy">962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United States.</p>
+                        </div>
+                        <div class="footer__email">
+                            <p class="footer__email-title">Email us at</p>
+                            <p class="footer__email-copy">hello@landify.design</p>
+                        </div>
+                        <div class="footer__phone">
+                            <p class="footer__phone-title">If you're hurry, quick call for us</p>
+                            <p class="footer__phone-copy">+8(663)125-08-59</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom-left">
+                        <p class="footer__copy">© 2022 Inteo - Award winning studio. Made with love by <a href="#" class="footer__copy-link">Landify</a></p>
+                    </div>
+                    <div class="footer__bottom-right">
+                        <span class="footer__eyebrow">
+                            Connect
+                            <div class="footer__line"></div>
+                        </span>
+                        <ul class="footer__socials">
+                            <li class="footer__social">
+                                <a href="#" class="footer__link">
+                                    <img id="instagramIcon" alt="Instagram icon">
+                                </a>
+                            </li>
+                            <li class="footer__social">
+                                <a href="#" class="footer__link">
+                                    <img id="facebookIcon" alt="Facebook icon">
+                                </a>
+                            </li>
+                            <li class="footer__social">
+                                <a href="#" class="footer__link">
+                                    <img id="youtubeIcon" alt="Youtube icon">
+                                </a>
+                            </li>
+                            <li class="footer__social">
+                                <a href="#" class="footer__link">
+                                    <img id="twitterIcon" alt="Twitter icon">
+                                </a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

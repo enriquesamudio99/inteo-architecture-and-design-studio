@@ -1,0 +1,83 @@
+@use '../base/mixins' as m;
+
+.awards {
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-300);
+
+    &__container {
+        padding: 1.5rem 0;
+        grid-template-columns: 64px 1fr;
+        gap: 1.25rem;
+
+        @include m.md { 
+            grid-template-columns: 116px 1fr;
+        }
+    }
+
+    &__header {
+        margin-top: 4px;
+        align-self: flex-start;
+
+        @include m.md { 
+            align-self: center;
+        }
+    }
+
+    &__span {
+        position: relative;
+        font-family: var(--font-heading);
+        font-style: italic;
+        font-size: var(--fs-display-xs);
+        line-height: 2rem;
+        opacity: .5;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: calc(100% + 8px);
+            transform: translateY(-50%);
+            width: 24px;
+            height: 1px;
+            background-color: var(--clr-white);
+            opacity: .5;
+
+            @include m.md { 
+                right: calc(100% + 20px);
+                width: 64px;
+            }
+        }
+    }
+
+    &__list {
+        gap: 1.5rem;
+
+        @include m.md { 
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem 2.5rem;
+        }
+
+        @include m.lg { 
+            grid-template-columns: repeat(4,max-content);
+            gap: 4rem;
+        }
+    }
+
+}
+
+.award {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    &__title {
+        font-size: var(--fs-body-sm);
+        line-height: 1.5rem;
+    }
+
+    &__year {
+        display: block;
+    }
+}
